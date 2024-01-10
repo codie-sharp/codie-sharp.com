@@ -30,10 +30,10 @@ export default function QuoteMachine() {
   }
 
   return (
-    <div id="quote-machine" className={`w-10/12 ${color} text-center`}>
+    <div id="quote-machine" className={`w-10/12 text-center rounded-3xl p-8`} style={{backgroundColor: `${color}`}}>
       <p id="quote" className="text-xl">"{quote.quote}"</p><br/>
       <p id="author" className="italic text-lg text-light">- {quote.author}</p><br/>
-      <button className={`text-lg`} onClick={nextQuote}>Next Quote</button>
+      <button className={`text-lg text-black bg-white border-white border-8 rounded-full`} onClick={nextQuote}>Next Quote</button>
     </div>
   );
 }
