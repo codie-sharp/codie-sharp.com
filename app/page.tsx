@@ -4,9 +4,11 @@ import QuoteMachine from './quote-machine';
 export default function Home() {
   return (
     <main>
-      <h1>Hi!</h1>
-      <h2>My name is Codie and I'm a fullstack web developer.</h2>
-      <QuoteMachine />
+      <div className="text-3xl font-bold ">Hi!</div>
+      <div className="text-xl">My name is Codie and I'm a fullstack web developer.</div><br/>
+      <div className="flex justify-center">
+        <QuoteMachine />
+      </div>
     </main>
   )
 }

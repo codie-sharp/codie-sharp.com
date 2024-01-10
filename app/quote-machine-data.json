@@ -1,0 +1,33 @@
+{
+  "quotes": [
+    {
+      "quote": "Whatever happens, happens.",
+      "author": "Spike Spiegel, Cowboy Bebop"
+    },
+    {
+      "quote": "I tell ya, instead of being alone in a group, it's better to have real solitude all by yourself.",
+      "author": "Faye Valentine, Cowboy Bebop"
+    },
+    {
+      "quote": "Everything has a beginning and an end. Life is just a cycle of starts and stops. There are ends we don't desire, but they're inevitable, we have to face them. It's what being human is all about.",
+      "author": "Jet Black, Cowboy Bebop"
+    },
+    {
+      "quote": "I got really, really nervous I just started eating cheese.",
+      "author": "Charlie Kelly, It's Always Sunny in Philadelphia"
+    },
+    {
+      "quote": "I have contained my rage for as long as possible, but I shall unleash my fury upon you like the crashing of a thousand waves! Begone, vile man! Begone from me! A starter car? This car is a finisher car! A transporter of gods! The golden god! I am untethered, and my rage knows no bounds!",
+      "author": "Dennis Reynolds, It's Always Sunny in Philadelphia"
+    },
+    {
+      "quote": "I'm not gonna be buried in a grave. When I'm dead, just throw me in the trash.",
+      "author": "Frank Reynolds, It's Always Sunny in Philadelphia"
+    },
+    {
+      "quote": "I’m not fat. I’m cultivating mass.",
+      "author": "Ronald \"Mac\" McDonald, It's Always Sunny in Philadelphia"
+    }
+  ],
+  "colors": ["bg-red-900", "bg-orange-900", "bg-amber-900", "bg-yellow-900", "bg-lime-900", "bg-green-900", "bg-emerald-900", "bg-teal-900", "bg-cyan-900", "bg-sky-900", "bg-blue-900", "bg-indigo-900", "bg-violet-900", "bg-purple-900", "bg-fuchsia-900", "bg-pink-900", "bg-rose-900"]
+}
