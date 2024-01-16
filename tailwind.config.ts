@@ -7,9 +7,6 @@ const config: Config = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    fontFamily: {
-      sans: ['monospace', 'monospace'],
-    }
   },
   plugins: [],
 }

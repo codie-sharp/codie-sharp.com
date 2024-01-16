@@ -27,7 +27,27 @@
     {
       "quote": "I’m not fat. I’m cultivating mass.",
       "author": "Ronald \"Mac\" McDonald, It's Always Sunny in Philadelphia"
+    },
+    {
+      "quote": "I’m sober enough to know what I’m doing, and drunk enough to really enjoy it.",
+      "author": "Jim Lahey, Trailer Park Boys"
+    },
+    {
+      "quote": "That's the way she goes.",
+      "author": "Ray Flower, Trailer Park Boys"
+    },
+    {
+      "quote": "Some guys can drink and drive, some guys can't. What is drunk?",
+      "author": "Ray Flower, Trailer Park Boys"
     }
   ],
-  "colors": ["navy", "maroon", "darkgreen"]
+  "colors": [
+    {"gradient1": "rgb(70 10 10)", "gradient2": "rgb(125 25 25)", "button": "rgb(0 0 0)"},
+    {"gradient1": "rgb(100 30 10)", "gradient2": "rgb(200 70 10)", "button": "rgb(0 0 0)"},
+    {"gradient1": "rgb(5 40 40)", "gradient2": "rgb(20 80 80)", "button": "rgb(0 0 0)"},
+    {"gradient1": "rgb(120 60 5)", "gradient2": "rgb(200 140 5)", "button": "rgb(0 0 0)"},
+    {"gradient1": "rgb(20 60 90)", "gradient2": "rgb(20 120 160)", "button": "rgb(0 0 0)"},
+    {"gradient1": "rgb(20 30 80)", "gradient2": "rgb(25 60 160)", "button": "rgb(0 0 0)"},
+    {"gradient1": "rgb(30 5 60)", "gradient2": "rgb(60 20 120)", "button": "rgb(0 0 0)"}
+  ]
 }

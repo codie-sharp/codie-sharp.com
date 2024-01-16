@@ -2,7 +2,8 @@
 'use client'
 
 import { useState } from 'react';
-import { quotes, colors } from './quote-machine-data.json';
+import quoteMachineData from './quote-machine-data.json';
+const { quotes, colors } = quoteMachineData;
 
 export default function QuoteMachine() {
   const [quoteArray, setQuoteArray] = useState(quotes.slice());
@@ -30,10 +31,13 @@ export default function QuoteMachine() {
   }
 
   return (
-    <div id="quote-machine" className={`w-10/12 text-center rounded-3xl p-8`} style={{backgroundColor: `${color}`}}>
-      <p id="quote" className="text-xl">"{quote.quote}"</p><br/>
-      <p id="author" className="italic text-lg text-light">- {quote.author}</p><br/>
-      <button className={`text-lg text-black bg-white border-white border-8 rounded-full`} onClick={nextQuote}>Next Quote</button>
+    <div id="quote-machine" className='min-w-full text_shadow border_ p-4 text-center drop-shadow-xl' style={{background: `linear-gradient(to right top, ${color.gradient1}, ${color.gradient2})`}}>
+      <p id="quote-text" className='text-xl font-bold'>"{quote.quote}"</p><br/>
+      <p id="quote-author" className='italic text-lg'>- {quote.author}</p><br/>
+      <button id="quote-button" className='p-4 text-lg font-bold rounded-full drop-shadow-xl' style={{background: color.button}} onClick={nextQuote}>Next Quote</button>
     </div>
   );
 }
+
+// transition, gradient, button that doesn't rerender
+// perhaps render next quote off screen and horizontally scroll to it
