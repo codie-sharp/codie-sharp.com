@@ -4,17 +4,4 @@
 
 html {
   height: 100%; /* prevent tiling */
-  background: linear-gradient(to bottom, rgb(0 70 35), rgb(0 30 15));
-}
-body {
-  color: white;
-  height: 100%;  font-family: monospace;
-}
-
-.text_shadow {
-  text-shadow: 2px 2px 5px black;
-}
-.border_{
-  border: 8px solid black;
-  border-radius: 2rem;
 }
