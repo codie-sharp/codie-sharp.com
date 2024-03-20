@@ -1,1 +1,0 @@
-Created with React, Next.js, and Tailwind CSS
