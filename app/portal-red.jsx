@@ -1,8 +1,8 @@
 import { Center, useTexture, useGLTF, OrbitControls } from '@react-three/drei'
 
-export default function PortalScene() {
-    const { nodes } = useGLTF('./model/portal-red.glb')
-    const bakedTexture = useTexture('./model/baked128.jpg')
+export default function PortalRed() {
+    const { nodes } = useGLTF('portal-red.glb')
+    const bakedTexture = useTexture('baked128.jpg')
     bakedTexture.flipY = false
 
     return <>

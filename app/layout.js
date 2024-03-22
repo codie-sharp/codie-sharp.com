@@ -1,8 +1,8 @@
-import "./style.css";
+import './globals.css';
 
 export const metadata = {
-  title: "Codie Sharp",
-  description: "Welcome to my site!",
+  title: 'Codie#',
+  description: 'Codie Sharp portfolio',
 };
 
 export default function RootLayout({ children }) {
