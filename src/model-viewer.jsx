@@ -1,5 +1,5 @@
 import { Canvas } from '@react-three/fiber'
-import PortalRed from '../portal-red'
+import PortalRed from './portal-red'
 
 export default function ModelViewer() {
   return(
