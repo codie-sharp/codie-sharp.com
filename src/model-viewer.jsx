@@ -1,4 +1,3 @@
-import './style.css'
 import { Canvas } from '@react-three/fiber'
 import PortalRed from './portal-red'
 
