@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [react(), glsl()],
   build:
     {
-        outDir: '../dist',
+        outDir: './dist',
         emptyOutDir: true,
         sourcemap: true
     },

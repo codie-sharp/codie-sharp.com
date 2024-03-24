@@ -3,7 +3,6 @@ export default function Intro() {
     className='bg-slate-800 p-2 flex flex-row md:flex-col max-h-fit
     md:max-w-min rounded-3xl rounded-b-none md:rounded-3xl md:rounded-r-none'
   >
-
     <div id='portrait' className='flex flex-col sm:flex-row justify-around'>
 
       <img src='/portrait.jpg'
@@ -19,7 +18,6 @@ export default function Intro() {
       </div>
 
     </div>
-
     <div id='about' className='bg-slate-900 p-4 flex rounded-3xl 
       m-2 text-md sm:text-xl lg:text-2xl'
     >
