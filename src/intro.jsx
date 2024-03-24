@@ -1,19 +1,28 @@
-import './style.css'
-
 export default function Intro() {
   return <div id='intro' 
-  className='bg-slate-800 p-4 flex 
-  flex-row lg:flex-col basis-1/3 lg:align-center
-  rounded-3xl rounded-b-none lg:rounded-3xl lg:rounded-r-none'>
+    className='bg-slate-800 p-2 flex flex-row md:flex-col max-h-fit
+    md:max-w-min rounded-3xl rounded-b-none md:rounded-3xl md:rounded-r-none'
+  >
 
-    <div id='portrait' className='flex justify-center'>
+    <div id='portrait' className='flex flex-col sm:flex-row justify-around'>
+
       <img src='/portrait.jpg'
-        className='rounded-full max-w-28 max-h-28
-          lg:max-w-40 lg:max-h-40'
+        className='rounded-full max-h-28 max-w-28 lg:max-h-52 lg:max-w-52'
       />
+
+      <div id='social' className='p-2 flex flex-row sm:flex-col 
+        justify-between lg:justify-around'
+      >
+        <img src='email-icon.jpg' className='min-w-6 max-w-6 lg:max-w-8'/>
+        <img src='github-icon.jpg' className='min-w-6 max-w-6 lg:max-w-8'/>
+        <img src='in-icon.jpg' className='min-w-6 max-w-6 lg:max-w-8'/>
+      </div>
+
     </div>
 
-    <div id='about' className='bg-slate-900 p-2 rounded-3xl'>
+    <div id='about' className='bg-slate-900 p-4 flex rounded-3xl 
+      m-2 text-md sm:text-xl lg:text-2xl'
+    >
       Hey! I'm Codie Sharp, a father, husband, and fullstack web dev.
     </div>
   </div>
