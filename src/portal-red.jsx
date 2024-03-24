@@ -1,4 +1,4 @@
-import { Center, useTexture, useGLTF, OrbitControls } from '@react-three/drei'
+import { PerspectiveCamera, Center, useTexture, useGLTF, OrbitControls } from '@react-three/drei'
 
 export default function PortalRed() {
     const { nodes } = useGLTF('portal-red.glb')
@@ -7,6 +7,7 @@ export default function PortalRed() {
 
     return <>
         <OrbitControls makeDefault />
+        <PerspectiveCamera makeDefault fov={45} position={[3,3,9]}/>
 
         <Center>
             <mesh geometry={ nodes.baked.geometry }>

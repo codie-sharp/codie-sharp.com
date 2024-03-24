@@ -1,11 +1,10 @@
 import { Canvas } from '@react-three/fiber'
-import PortalRed from './portal-red'
 
-export default function ModelViewer() {
+export default function ModelViewer({ children }) {
   return(
-    <Canvas flat camera={{fov: 45, near: 0.1, far: 50, position: [1,2,6]}}>
+    <Canvas>
         <color args={ [ '#030202' ] } attach="background" />
-        <PortalRed />
+        { children }
     </Canvas>
   )
 }
