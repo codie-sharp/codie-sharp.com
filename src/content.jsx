@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Card from './card'
 import ModelViewer from './model-viewer'
 import PortalRed from './portal-red'
+import Modal from './modal'
 
 export default function Content() {
   const [activeId, setActiveId] = useState(false)
@@ -10,17 +11,23 @@ export default function Content() {
     else {setActiveId(id)}
   }
 
+  const [modalState, setModalState] = useState(false);
+  const openModal = () => setModalState(true);
+  const closeModal = () => setModalState(false);
+  
   return<div id='content' 
     className='bg-slate-700 p-1 flex basis-full flex-col h-full
     rounded-3xl rounded-t-none md:rounded-3xl md:rounded-l-none overflow-hidden'
   >
+    <Modal isOpen={modalState} onClose={closeModal}/>
+
     <div id='projects'
       className={`${activeId === 'projects' ? 'basis-full' : ''}
-      bg-slate-900 cursor-pointer my-1 rounded-3xl flex flex-col
+      bg-slate-900 my-1 rounded-3xl flex flex-col
       overflow-hidden`}
     >
       <div onClick={() => toggleAccordion('projects')} 
-        className='py-3 px-6 flex justify-between text-lg'
+        className='cursor-pointer py-3 px-6 flex justify-between text-lg'
       >
         <span>Projects</span>
         <span className='text-2xl'>+</span>
@@ -30,7 +37,7 @@ export default function Content() {
        md:flex-row items-center lg:items-start overflow-auto
        md:overflow-y-hidden`}
       >
-        <Card image={'portal-red-render.jpg'} 
+        <Card image={'portal-red-render.jpg'} open={openModal}
           content={['Blender', 'Three.js', 'React', 'asdf', 'wasd', 'jkl;']}
         />
         <Card image={'portal-red-render.jpg'} 
@@ -53,11 +60,11 @@ export default function Content() {
 
     <div id='blog'
       className={`${activeId === 'blog' ? 'basis-full' : ''}
-      bg-slate-900 cursor-pointer my-1 rounded-3xl flex flex-col
+      bg-slate-900 my-1 rounded-3xl flex flex-col
       overflow-hidden`}
     >
       <div onClick={() => toggleAccordion('blog')}
-        className='py-3 px-6 flex justify-between text-lg'
+        className='cursor-pointer py-3 px-6 flex justify-between text-lg'
       >
         <span>Blog</span>
         <span className='text-2xl'>+</span>
