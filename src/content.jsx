@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Card from './card'
 import ModelViewer from './model-viewer'
-import PortalRed from './portal-red'
+import PortalRed from './models/portal-red'
 
 export default function Content() {
   const [activeId, setActiveId] = useState(false)
@@ -31,23 +31,12 @@ export default function Content() {
        md:overflow-y-hidden`}
       >
         <Card image={'portal-red-render.jpg'}
-          tags={['Blender', 'Three.js', 'React', 'asdf', 'wasd', 'jkl;']}
-        />
-        <Card image={'portal-red-render.jpg'} 
-          tags={['Blender', 'Three.js', 'React', 'asdf', 'wasd', 'jkl;']}
-        />
-        <Card image={'portal-red-render.jpg'} 
-          tags={['Blender', 'Three.js', 'React', 'asdf', 'wasd', 'jkl;']}
-        />
-        <Card image={'portal-red-render.jpg'} 
-          tags={['Blender', 'Three.js', 'React', 'asdf', 'wasd', 'jkl;']}
-        />
-        <Card image={'portal-red-render.jpg'} 
-          tags={['Blender', 'Three.js', 'React', 'asdf', 'wasd', 'jkl;']}
-        />
-        {/* <ModelViewer>
-          <PortalRed/>
-        </ModelViewer> */}
+          tags={['Blender', 'Three.js', 'React']}
+        >
+          <ModelViewer>
+            <PortalRed/>
+          </ModelViewer>
+        </Card>
       </div>
     </div>
 
