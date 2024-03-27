@@ -22,16 +22,22 @@ export default function Content() {
       <div onClick={() => toggleAccordion('projects')} 
         className='cursor-pointer py-3 px-6 flex justify-between text-lg'
       >
-        <span>Projects</span>
-        <span className='text-2xl'>+</span>
+        <span className='sm:text-xl lg:text-2xl tracking-wide'>Projects</span>
+        <span className='text-2xl sm:text-3xl'>
+          {activeId === 'projects' ? '-' : '+'}
+        </span>
       </div>
       <div className={`${activeId === 'projects' ? '' : 'hidden'}
-       bg-slate-800 rounded-3xl p-2 m-2 h-full flex flex-col 
-       md:flex-row items-center lg:items-start overflow-auto
-       md:overflow-y-hidden`}
+        bg-slate-800 rounded-3xl p-2 m-2 h-full flex flex-col 
+        md:flex-row items-center lg:items-start overflow-auto
+        md:overflow-y-hidden`}
       >
-        <Card image={'portal-red-render.jpg'}
-          tags={['Blender', 'Three.js', 'React']}
+        <Card image={'models/portal-red/portal-red-render.jpg'}
+          title={'Red Portal'} tags={['Blender', 'Three.js', 'React']}
+          description={`My first 3D scene, created with Blender using noise nodes for 
+          textures and baked to optimize rendering in the browser with Three.js. It was
+          inspired by my experiences doing wildfire rehabilitation in California, with
+          a supernatural twist.`}
         >
           <ModelViewer>
             <PortalRed/>
@@ -48,8 +54,10 @@ export default function Content() {
       <div onClick={() => toggleAccordion('blog')}
         className='cursor-pointer py-3 px-6 flex justify-between text-lg'
       >
-        <span>Blog</span>
-        <span className='text-2xl'>+</span>
+        <span className='sm:text-xl lg:text-2xl tracking-wide'>Blog</span>
+        <span className='text-2xl sm:text-3xl'>
+          {activeId === 'blog' ? '-' : '+'}
+        </span>
       </div>
       <div className={`${activeId === 'blog' ? '' : 'hidden'}
        bg-slate-800 rounded-3xl p-4 mt-2 h-full text-center text-3xl overflow-auto`}
