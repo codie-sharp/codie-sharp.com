@@ -28,7 +28,7 @@ export default function Intro() {
       </div>
     </div>
     <div id='about' className='bg-slate-900 p-4 flex rounded-3xl 
-      m-2 text-md sm:text-xl lg:text-2xl'
+      m-2 sm:text-xl lg:text-2xl'
     >
       Hey! I'm Codie Sharp, a father, husband, and fullstack web dev.
     </div>
