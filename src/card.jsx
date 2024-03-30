@@ -7,7 +7,7 @@ export default function Card({image, title, tags, description, children}) {
   const closeModal = () => setModalState(false);
 
   return <div id = {`${title}-card`} className='bg-slate-700 sm:m-2 flex flex-col
-    rounded-3xl max-w-full md:min-w-80 md:max-w-80'
+    rounded-3xl'
   >
     <img id={`${title}-image`} src={`${image}`} onClick={openModal} 
       className='rounded-t-3xl cursor-pointer'

@@ -16,6 +16,7 @@ body,
   padding: 0.5em;
   background: #0f172a; /*slate-900*/
   font-family: Inter, sans-serif;
+  color: #f8fafc; /*slate-50*/
 }
 
 .modal {

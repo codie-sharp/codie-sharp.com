@@ -12,23 +12,23 @@ export default function Intro() {
       >
         <a href='mailto:codie.sharp@gmail.com'>
           <img src='./icons/email-icon.jpg' 
-            className='min-w-6 max-w-6 lg:max-w-8'
+            className='min-w-6 max-w-6'
           />
         </a>
         <a href='https://github.com/codie-sharp'>
           <img src='./icons/github-icon.jpg' 
-            className='min-w-6 max-w-6 lg:max-w-8'
+            className='min-w-6 max-w-6'
           />
         </a>
         <a href='https://www.linkedin.com/in/codiesharp/'>
           <img src='./icons/in-icon.jpg' 
-            className='min-w-6 max-w-6 lg:max-w-8'
+            className='min-w-6 max-w-6'
           />
         </a>
       </div>
     </div>
     <div id='about' className='bg-slate-900 p-4 flex rounded-3xl 
-      m-2 sm:text-xl lg:text-2xl'
+      m-2 sm:text-xl lg:text-2xl max-h-full overflow-auto'
     >
       Hey! I'm Codie Sharp, a father, husband, and fullstack web dev.
     </div>
