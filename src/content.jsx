@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Card from './card'
 import ModelViewer from './model-viewer'
 import PortalRed from './models/portal-red'
+import Mosh from './models/mosh'
 
 export default function Content() {
   const [activeId, setActiveId] = useState(false)
@@ -16,11 +17,11 @@ export default function Content() {
   >
     <div id='projects'
       className={`${activeId === 'projects' ? 'basis-full' : ''}
-      bg-slate-900 my-1 rounded-3xl flex flex-col
-      overflow-hidden`}
+      bg-slate-900 my-1 rounded-3xl flex flex-col overflow-hidden shadow-lg
+      hover:ring-1 hover: ring-yellow-600`}
     >
       <div onClick={() => toggleAccordion('projects')} 
-        className='cursor-pointer py-3 px-6 flex justify-between text-lg'
+        className='cursor-pointer py-3 px-6 flex justify-between'
       >
         <span className='sm:text-xl lg:text-2xl tracking-wide'>Projects</span>
         <span className='text-2xl sm:text-3xl'>
@@ -28,7 +29,7 @@ export default function Content() {
         </span>
       </div>
       <div className={`${activeId === 'projects' ? '' : 'hidden'}
-        bg-slate-800 rounded-3xl p-2 m-2 h-full flex flex-col 
+        bg-slate-800 rounded-3xl p-2 h-full flex flex-col 
         md:flex-row items-center lg:items-start overflow-auto
         md:overflow-y-hidden`}
       >
@@ -43,16 +44,25 @@ export default function Content() {
             <PortalRed/>
           </ModelViewer>
         </Card>
+
+        <Card image={'models/mosh/mosh.jpg'}
+          title={'Mosh'} tags={['Blender', 'Three.js', 'React']}
+          description={'Animated mosh pit made in Blender'}
+        >
+          <ModelViewer>
+            <Mosh/>
+          </ModelViewer>
+        </Card>
       </div>
     </div>
 
     <div id='blog'
       className={`${activeId === 'blog' ? 'basis-full' : ''}
-      bg-slate-900 my-1 rounded-3xl flex flex-col
-      overflow-hidden`}
+      bg-slate-900 my-1 rounded-3xl flex flex-col overflow-hidden shadow-lg
+      hover:ring-1 hover: ring-yellow-600`}
     >
       <div onClick={() => toggleAccordion('blog')}
-        className='cursor-pointer py-3 px-6 flex justify-between text-lg'
+        className='cursor-pointer py-3 px-6 flex justify-between'
       >
         <span className='sm:text-xl lg:text-2xl tracking-wide'>Blog</span>
         <span className='text-2xl sm:text-3xl'>
