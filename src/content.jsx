@@ -29,10 +29,10 @@ export default function Content() {
       </div>
       <div id='projects-body' className={`${activeId === 'projects' ? '' : 'hidden'}
         bg-slate-800 rounded-3xl p-2 h-full flex flex-col md:flex-wrap md:justify-around
-        md:flex-row items-center overflow-auto`}
+        md:flex-row items-center md:items-start overflow-auto`}
       >
         <Card image={'models/portal-red/portal-red-render.jpg'}
-          title={'Red Portal'} tags={['Blender', 'Three.js', 'React']}
+          title={'Red Portal'} tags={['Blender', 'Three.js']}
           description={`My first 3D scene, created with Blender using noise nodes for 
           textures and baked to optimize rendering in the browser with Three.js. It was
           inspired by my experiences doing wildfire rehabilitation in California, with
@@ -44,72 +44,14 @@ export default function Content() {
         </Card>
 
         <Card image={'models/mosh/mosh.jpg'}
-          title={'Mosh'} tags={['Blender', 'Three.js', 'React']}
-          description={'Animated mosh pit made in Blender'}
+          title={'Mosh'} tags={['Blender', 'Inkscape']}
+          description={`My debut animation, built in Blender with particle and 
+          force field systems, brings a mosh pit's energy to life with vibrant 
+          bouncing shapes. Inspired by the unifying spirit of moshing, 
+          the animation abstracts the experience of diverse individuals 
+          coming together in a dynamic, colorful whole.`}
         >
-          <ModelViewer>
-            <Mosh/>
-          </ModelViewer>
-        </Card>
-        <Card image={'models/portal-red/portal-red-render.jpg'}
-          title={'Red Portal'} tags={['Blender', 'Three.js', 'React']}
-          description={`My first 3D scene, created with Blender using noise nodes for 
-          textures and baked to optimize rendering in the browser with Three.js. It was
-          inspired by my experiences doing wildfire rehabilitation in California, with
-          a supernatural twist.`}
-        >
-          <ModelViewer>
-            <PortalRed/>
-          </ModelViewer>
-        </Card>
-
-        <Card image={'models/mosh/mosh.jpg'}
-          title={'Mosh'} tags={['Blender', 'Three.js', 'React']}
-          description={'Animated mosh pit made in Blender'}
-        >
-          <ModelViewer>
-            <Mosh/>
-          </ModelViewer>
-        </Card>
-        <Card image={'models/portal-red/portal-red-render.jpg'}
-          title={'Red Portal'} tags={['Blender', 'Three.js', 'React']}
-          description={`My first 3D scene, created with Blender using noise nodes for 
-          textures and baked to optimize rendering in the browser with Three.js. It was
-          inspired by my experiences doing wildfire rehabilitation in California, with
-          a supernatural twist.`}
-        >
-          <ModelViewer>
-            <PortalRed/>
-          </ModelViewer>
-        </Card>
-
-        <Card image={'models/mosh/mosh.jpg'}
-          title={'Mosh'} tags={['Blender', 'Three.js', 'React']}
-          description={'Animated mosh pit made in Blender'}
-        >
-          <ModelViewer>
-            <Mosh/>
-          </ModelViewer>
-        </Card>
-        <Card image={'models/portal-red/portal-red-render.jpg'}
-          title={'Red Portal'} tags={['Blender', 'Three.js', 'React']}
-          description={`My first 3D scene, created with Blender using noise nodes for 
-          textures and baked to optimize rendering in the browser with Three.js. It was
-          inspired by my experiences doing wildfire rehabilitation in California, with
-          a supernatural twist.`}
-        >
-          <ModelViewer>
-            <PortalRed/>
-          </ModelViewer>
-        </Card>
-
-        <Card image={'models/mosh/mosh.jpg'}
-          title={'Mosh'} tags={['Blender', 'Three.js', 'React']}
-          description={'Animated mosh pit made in Blender'}
-        >
-          <ModelViewer>
-            <Mosh/>
-          </ModelViewer>
+          <Mosh/>
         </Card>
       </div>
     </div>
