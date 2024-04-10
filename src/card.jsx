@@ -6,11 +6,11 @@ export default function Card({image, title, tags, description, children}) {
   const openModal = () => setModalState(true);
   const closeModal = () => setModalState(false);
 
-  return <div className='bg-slate-700 sm:m-2 flex flex-col hover:ring-1 hover: ring-yellow-600
-    rounded-3xl shadow-lg'
+  return <div id={`card-${title}`} className='bg-slate-700 m-2 flex flex-col 
+    hover:ring-1 hover: ring-yellow-600 rounded-3xl shadow-lg basis-1/3 grow'
   >
     <img src={`${image}`} onClick={openModal} 
-      className='rounded-t-3xl cursor-pointer'
+      className='rounded-t-3xl cursor-pointer object-cover aspect-video'
     />
     <div className='bg-slate-900 w-full sm:text-lg lg:text-xl p-1 
       text-center tracking-wider'>
