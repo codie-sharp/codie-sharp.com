@@ -3,6 +3,7 @@ import Card from './card'
 import ModelViewer from './model-viewer'
 import PortalRed from './models/portal-red'
 import Mosh from './models/mosh'
+import Vend from './models/vend'
 
 export default function Content() {
   const [activeId, setActiveId] = useState(false)
@@ -52,6 +53,15 @@ export default function Content() {
           coming together in a dynamic, colorful whole.`}
         >
           <Mosh/>
+        </Card>
+
+        <Card image={'models/mosh/mosh.jpg'}
+          title={'Vending Machine'} tags={['Blender']}
+          description={`Vending machine`}
+        >
+          <ModelViewer>
+            <Vend/>
+          </ModelViewer>
         </Card>
       </div>
     </div>
